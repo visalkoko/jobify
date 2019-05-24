@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jobify</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kdam+Thmor&amp;subset=khmer" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="icon" type="image/png" href="../images/jobify.png">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<!-- firebase connect -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140647802-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140647802-1');
+</script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <img style="width: 55px; height: 65px;" class="navbar-brand" src="../images/jobify.png" href="index.html">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+            <li class="nav-item"><a href="#benefit" class="nav-link">Benefit</a></li>
+            <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+            <!-- <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonial</a></li> -->
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+            <li class="nav-item cta"><a href="../index.html" class="nav-link" style="font-family: 'Kdam Thmor';">ភាសាខ្មែរ</a></li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+      <div class="hero-wrap">
+        <div class="overlay"></div>
+        <div class="circle-bg"></div>
+        <div class="circle-bg-2"></div>
+        <div class="container-fluid">
+          <div class="slider-text d-md-flex align-items-center" data-scrollax-parent="true">
+
+            <div class="one-forth pr-md-4 ftco-animate align-self-md-center" data-scrollax=" properties: { translateY: '70%' }">
+              <h1 class="mb-4">Welcome <br> to Jobify Comapny</h1>
+              <p class="mb-md-5 mb-sm-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Jobify is a company that help you to find job, recruit staffs in a more efficient and productive way!</p>
+              <div class="" style=" margin-bottom: 15px;">
+                    <form action="#" class="subscribe-form" id="contactForm">
+                      <div class="form-group">
+                        <span class="icon icon-paper-plane"></span>
+                        <input type="email" class="form-control" placeholder="Enter email address" id="email" required>
+                      </div>
+                      <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><button type="submit" class="btn btn-primary px-4 py-3" style="margin-top: 20px;">Subscribe</button></p>
+
+                      <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                  </div>
+
+
+            </div>
+            <div class="one-half align-self-md-end align-self-sm-center">
+              <div class="slider-carousel owl-carousel">
+                <div class="item">
+                  <img src="../images/screen1.png" class="img-fluid img"alt="">
+                </div>
+                <div class="item">
+                  <img src="../images/screen2.png" class="img-fluid img"alt="">
+                </div>
+                <div class="item">
+                  <img src="../images/screen3.png" class="img-fluid img"alt="">
+                </div>
+                <div class="item">
+                  <img src="../images/screen4.png" class="img-fluid img"alt="">
+                </div>
+                <div class="item">
+                  <img src="../images/screen5.png" class="img-fluid img"alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="ftco-section bg-light" id="about">
+        <div class="container">
+          <div class="row justify-content-center mb-5 mt-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span class="subheading">ABOUT US</span>
+              <h2 class="mb-4"><b>WHO WE ARE</b></h2>
+              <p style="color: black;">Jobify is an all-new job matching platform. We provide job seekers, especially freshly graduated students, the accessibility to our vast pool of job opportunities. For company looking to recruit employees, we ensure you will have the best candidate in the market.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section" id="service">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span class="subheading">Workflow</span>
+              <h2 class="mb-4"><b>How We Work</b></h2>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-12 align-items-center ftco-animate">
+
+              <div class="tab-content ftco-animate" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active" id="v-pills-nextgen" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+                  <div class="d-md-flex">
+                    <div class="one-forth align-self-center">
+                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ck49AD5RkuU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="one-half ml-md-5 align-self-center">
+                      <h2 class="mb-4">Jobify Provide Best Service</h2>
+                      <p style="color: black;">Job seekers register an account on Jobify for free. Then fill out the resume and send out to multiple companies of interest -all at once! You can also apply for Jobify skill test, which is also FREE, to get bonus credit in your resume. As a company looking to hire new team players, you could browse through all available candidates. Plus, create a custom Jobify skill test to match your need.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section services-section" id="benefit" style="background: #f1f4fd;">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span class="subheading">BENEFITS</span>
+              <h2 class="mb-4"><b>WHY US</b></h2>
+              <h5 class="mb-4"><b>JOBSEEKERS</b></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate ftco-animate" >
+              <div class="media block-6 services d-block text-center" style="box-shadow: 0px 5px 18px -12px rgba(0, 0, 0, 0.75);border: 1px solid #f5f6f7; background: #fefeff; padding: 20px;">
+                <div class="d-flex justify-content-center"><div class="icon"><img src="../images/icon1.png" style="width: 40%;"></div>
+              </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading" style="color: black;"><b>Quick job matching</b></h3>
+                  <p style="color: black;">With our huge network, getting a job, the one you like, is just a few steps away.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center" style="box-shadow: 0px 5px 18px -12px rgba(0, 0, 0, 0.75); border: 1px solid #f5f6f7; background: #fefeff; padding: 20px;">
+                <div class="d-flex justify-content-center"><div class="icon"><img src="../images/icon2.png" style="width: 40%;"></div></div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading" style="color: black;"><b>Host your resume for free</b></h3>
+                  <p style="color: black;">Use our templated or customized resume to beautify your career milestones! Oh, and we concern about your privacy, so you can set it to public or private.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center" style="box-shadow: 0px 5px 18px -12px rgba(0, 0, 0, 0.75); border: 1px solid #f5f6f7; background: #fefeff; padding: 20px;">
+                <div class="d-flex justify-content-center"><div class="icon"><img src="../images/icon3.png" style="width: 40%;"></div></div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading" style="color: black;"><b>Take Jobify skill test for free</b></h3>
+                  <p style="color: black;">Jobify skill test ensures and reiterates candidate working capability. You can take it for free!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="ftco-section services-section" style="background: #f1f4fd;">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <h5 class="mb-4"><b>COMPANY</b></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center" style="box-shadow: 0px 5px 18px -12px rgba(0, 0, 0, 0.75); border: 1px solid #f5f6f7; background: #fefeff; padding: 20px;">
+                <div class="d-flex justify-content-center"><div class="icon"><img src="../images/icon4.png" style="width: 40%;"></div></div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading" style="color: black;"><b>Instant access to skilled labor</b></h3>
+                  <p style="color: black;">With number of qualified candidates in various field looking for job in our website, we ensure that you have the best access to labor market.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center" style=" box-shadow: 0px 5px 18px -12px rgba(0, 0, 0, 0.75); border: 1px solid #f5f6f7;background: #fefeff; padding: 20px;">
+                <div class="d-flex justify-content-center"><div class="icon"><img src="../images/icon5.png" style="width: 40%;"></div></div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading" style="color: black;"><b>Free job hosting</b></h3>
+                  <p style="color: black;">Hosting a job should not cost you any money. So, why would we cost you to just host a job?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center" style="box-shadow: 0px 5px 18px -12px rgba(0, 0, 0, 0.75);border: 1px solid #f5f6f7; background: #fefeff; padding: 20px;">
+                <div class="d-flex justify-content-center"><div class="icon"><img src="../images/icon6.png" style="width: 40%;"></div></div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading" style="color: black;"><b>Customizable skill test</b></h3>
+                  <p style="color: black;">Jobify helps company to customize skill test to get the right candidate for the right position.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section bg-light" id="pricing">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate" style="margin: 0px 0 50px;">
+              <span class="subheading">Pricing Plans</span>
+              <h2 class="mb-5"><b>BEST PRICING</b></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 ftco-animate">
+              <div class="block-7">
+                <div class="text-center">
+                <h2 class="heading">Job Seekers</h2>
+                <span class="price"><span class="number">FREE</span></span>
+
+                <h3 class="heading-2 mb-3" style="color: black;">Everything is free. We dont charge you anything. <br><br></h3>
+                <a href="https://www.facebook.com/jobify.works/" class="btn btn-primary d-block px-3 py-3 mb-4">Join now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 ftco-animate">
+              <div class="block-7">
+                <div class="text-center">
+                <h2 class="heading">Company</h2>
+                <span class="price"><span class="number">CHARGE</span></span>
+                <h3 class="heading-2 mb-3" style="color: black;">Jobify charge only when we successfully match you to the right candidate. </h3>
+                <a href="#subForm" class="btn btn-primary d-block px-3 py-3 mb-4">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="ftco-section testimony-section" id="testimonial" style="background: #f1f4fd;">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span class="subheading">Customer Feedback</span>
+              <h2 class="mb-4"><b>Customer Satisfaction</b></h2>
+            </div>
+          </div>
+          <div class="row ftco-animate">
+            <div class="col-md-12">
+              <div class="carousel-testimony owl-carousel ftco-owl">
+                <div class="item">
+                  <div class="testimony-wrap p-4 pb-5">
+                    <div class="user-img mb-5" style="background-image: url(img/person_1.jpg)">
+                      <span class="quote d-flex align-items-center justify-content-center">
+                        <i class="icon-quote-left"></i>
+                      </span>
+                    </div>
+                    <div class="text">
+                      <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <p class="name">Dennis Green</p>
+                      <span class="position">Marketing Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="testimony-wrap p-4 pb-5">
+                    <div class="user-img mb-5" style="background-image: url(img/person_2.jpg)">
+                      <span class="quote d-flex align-items-center justify-content-center">
+                        <i class="icon-quote-left"></i>
+                      </span>
+                    </div>
+                    <div class="text">
+                      <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <p class="name">Dennis Green</p>
+                      <span class="position">Interface Designer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="testimony-wrap p-4 pb-5">
+                    <div class="user-img mb-5" style="background-image: url(img/person_3.jpg)">
+                      <span class="quote d-flex align-items-center justify-content-center">
+                        <i class="icon-quote-left"></i>
+                      </span>
+                    </div>
+                    <div class="text">
+                      <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <p class="name">Dennis Green</p>
+                      <span class="position">UI Designer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="testimony-wrap p-4 pb-5">
+                    <div class="user-img mb-5" style="background-image: url(img/person_1.jpg)">
+                      <span class="quote d-flex align-items-center justify-content-center">
+                        <i class="icon-quote-left"></i>
+                      </span>
+                    </div>
+                    <div class="text">
+                      <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <p class="name">Dennis Green</p>
+                      <span class="position">Web Developer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="testimony-wrap p-4 pb-5">
+                    <div class="user-img mb-5" style="background-image: url(img/person_1.jpg)">
+                      <span class="quote d-flex align-items-center justify-content-center">
+                        <i class="icon-quote-left"></i>
+                      </span>
+                    </div>
+                    <div class="text">
+                      <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <p class="name">Dennis Green</p>
+                      <span class="position">System Analytics</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <footer class="ftco-footer ftco-bg-dark ftco-section" id="contact">
+
+
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-5">
+                <h2 class="ftco-heading-2">Jobify</h2>
+                <p>Jobify is a company that help you to find job, recruit staffs in a more efficient and productive way!</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4 ml-md-5">
+                <div class="block-23 mb-8">
+                  <ul>
+                    <li><span class="icon icon-map-marker"></span><span class="text">#253, 255 E0, Borey Bipup Thmey-Boeung Chhouk, Street E, Khan Posenchey, Phnom Penh, Cambodia</span></li>
+                    <li><a href="tel:+85512509856"><span class="icon icon-phone"></span><span class="text">+855 12 509 856</span></a></li>
+                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">jobify@kit.edu.kh</span></a></li>
+                    <li><span class="icon icon-clock-o"></span><span class="text">Monday &mdash; Saturday 8:00am - 5:00pm</span></li>
+                  </ul>
+                </div>
+
+
+                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                  <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.facebook.com/jobify.works/"><span class="icon-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.youtube.com/channel/UChXKFLDKRtW4a08aoswn6OQ"><span class="icon-youtube"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- new contact -->
+        <div class="containerSub" id="subForm">
+            <div class="contactSub">
+              <h2>Email Us</h2>
+              <div class="alertSub">Your message has been sent</div>
+              <form id="contactFormSub">
+                <p>
+                  <label>Name</label>
+                  <input type="text" name="name" id="name" required>
+                </p>
+                <p>
+                  <label>Company</label>
+                  <input type="text" name="company" id="company">
+                </p>
+                <p>
+                  <label>Email Address</label>
+                  <input type="email" name="emailsub" id="emailsub" required>
+                </p>
+                <p>
+                  <label>Phone Number</label>
+                  <input type="text" name="phone" id="phone">
+                </p>
+                <p class="full">
+                  <label>Message</label>
+                  <textarea name="message" rows="5" id="message"></textarea>
+                </p>
+                <p class="full">
+                  <button type="submit" class="btn btn-primary d-block px-3 py-3 mb-4">Submit</button>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!-- end new contact   -->
+
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>With <i class="icon-heart" aria-hidden="true"></i> from Jobify</a></p>
+          </div>
+        </div>
+      </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script type="text/javascript" src="../js/firebasemain.js"></script>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/jquery.waypoints.min.js"></script>
+  <script src="../js/jquery.stellar.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/aos.js"></script>
+  <script src="../js/jquery.animateNumber.min.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
+  <script src="../js/jquery.timepicker.min.js"></script>
+  <script src="../js/scrollax.min.js"></script>
+  <script src="../js/main.js"></script>
+
+
+
+
+  </body>
+</html>
